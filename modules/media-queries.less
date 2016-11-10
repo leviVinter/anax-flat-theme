@@ -5,6 +5,24 @@ img {
     max-width: 100%;
 }
 
+@media screen and (max-width: 1215px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
+@media screen and(max-width: 950px) {
+    .article,
+    .footer {
+        margin: 0 1em;
+    }
+    .main.has-sidebar {
+        .article {
+            margin: 0 1em;
+        }
+    }
+}
+
 @media screen and (max-width: 900px) {
     .site-logo-text {
         width: 40%;
@@ -25,6 +43,10 @@ img {
         //width: 100%;
         display: none;
     }
+    .main.has-sidebar {
+        width: 100%;
+        display: block;
+    }
 }
 
 
@@ -42,6 +64,13 @@ img {
      
      .navbar2 {
          display: none;
+     }
+
+     .inner-wrap-main img,
+     .inner-wrap-main .img-spray-paint {
+         width: 100%;
+         margin-left: 0;
+         margin-bottom: 1em;
      }
  }
  

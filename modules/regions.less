@@ -1,6 +1,10 @@
 /**
  * Regions, basics to show off the regions.
  */
+
+html {
+    overflow-y: scroll;
+}
 .wrap-all {
     margin: 0 auto;
     max-width: 950px;
@@ -18,9 +22,13 @@
 .sidebar {
     width: 33%;
     float: left;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
 }
 
-.main .has-sidebar {
+.main.has-sidebar {
     width: 67%;
     float: left;
 }
@@ -36,7 +44,7 @@
     ul {
         margin: 0;
         padding: 0;
-        list-type: none;
+        list-style: none;
     }
 
     li {
