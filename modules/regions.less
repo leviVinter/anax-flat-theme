@@ -93,3 +93,41 @@ html {
 .site-header {
     position: relative;
 }
+
+// Old styling
+
+/** --------------------------------------------------------------
+ *  Main content
+ */
+.article {
+    line-height: 1.6em;
+
+    margin: 0 2em;
+    .image-me {
+        float: right;
+        margin-left: 1em;
+    }
+    .img-spray-paint {
+        float: right;
+        width: 50%;
+    }
+}
+
+.main.has-sidebar {
+    .article {
+        margin: 0;
+    }
+}
+
+/** --------------------------------------------------------------
+ *  After main
+ */
+.image-byline {
+    float: left;
+    margin-right: 1em;
+}
+
+/** --------------------------------------------------------------
+ *  Smaller screen
+ */
+@import url(modules/media-queries.less);
