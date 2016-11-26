@@ -1,5 +1,10 @@
 #Revisions
 
+v4.0.0 (2016-11-26)
+---------------------------------------
+
+* Different classes for the html tag will now generate different styles for the page.
+
 v3.0.0 (2016-11-19)
 ---------------------------------------
 

@@ -155,7 +155,7 @@ a.rm-button {
         display: block;
         text-decoration: none;
         white-space: nowrap;
-        padding: 1em;
+        padding: @magicNumber 1em;
         outline: none;
 
         &:hover {
@@ -207,16 +207,6 @@ a.rm-button {
             //color: @navbarItemSelectedColor; 
             background-color: @navbarItemSelectedBgColor; 
         }
-
-
-
-        // Style hovering over a menu item
-        a:hover,
-        &.current-menu-item a {
-            text-decoration: underline;
-        }
-
-
 
         // The link of the menu item
         a {

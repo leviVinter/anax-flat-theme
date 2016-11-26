@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Lakki+Reddy|Gloria+Hallelujah|Knewave');
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 body {
     .font();
 
@@ -36,7 +43,7 @@ body {
         .showGrid();
     }
     
-    table {
+    .alan-turing {
         border: 1px solid #999;
         box-sizing: border-box;
         margin-top: 0;
@@ -88,17 +95,29 @@ body {
     vertical-align: center;
     .navbar2 {
         float: right;
-        .selected,
-        .selected-parent {
-            text-decoration: underline;
-        }
     }
+
+    .logo-1 {
+        position: absolute;
+        top: 70px;
+        left: -140px;
+    }
+
     .site-logo-text {
         .fontSize(3em);
         a {
             text-decoration: none;
+            line-height: @magicNumber * 3px;
+            font-family: 'Bungee', cursive;
         }
     }
+
+    .site-logo-text-icon {
+        img {
+            vertical-align: center;
+        }
+    }
+
 
     // Size of max navbar button
     .rm-max .rm-small .rm-button {
@@ -113,6 +132,7 @@ body {
     height: @flashHeight;
     img {
         height: @flashHeight;
+        width: 100%;
     }
 }
 
@@ -150,11 +170,10 @@ body {
 .sidebar {
     .column(3);
     .toc {
+        list-style: none;
+        padding-left: 0;
         a {
             text-decoration: none;
-        }
-        .selected a {
-            text-decoration: underline;
         }
     }
 
@@ -179,12 +198,29 @@ body {
     margin-right: 1em;
 }
 
+.img-colorscheme {
+    width: 100%;
+}
+
+.color-palette div {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    width: @magicNumber * 2;
+    height: @magicNumber * 2;
+    display: inline-block;
+}
+
 .after-main {
     .column(12);
 }
 
 .footer-column {
     .column(4);
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
 }
 
 .site-footer {
