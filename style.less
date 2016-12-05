@@ -76,7 +76,7 @@ html.color {
             @navbarBorderHeight: 4px;
             a {
                 border-bottom: @navbarBorderHeight solid @colorBase;
-                padding-bottom: @magicNumber - @navbarBorderHeight;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
 
             }
         }
@@ -107,6 +107,13 @@ html.color {
     .next-previous a {
         color: @colorBase;
         text-decoration: none;
+    }
+
+    .outer-wrap-footer {
+        overflow-y: auto;
+        color: #fff;
+        margin-top: @magicNumber * 1px;
+        background-color: #424242;
     }
 }
 
@@ -148,7 +155,7 @@ html.dark {
             @navbarBorderHeight: 4px;
             a {
                 border-bottom: @navbarBorderHeight solid @darkComp1;
-                padding-bottom: @magicNumber - @navbarBorderHeight;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
 
             }
         }
@@ -229,7 +236,7 @@ html.colorful {
             @navbarBorderHeight: 4px;
             a {
                 border-bottom: @navbarBorderHeight solid @colorfulYellow0;
-                padding-bottom: @magicNumber - @navbarBorderHeight;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
 
             }
         }
@@ -352,7 +359,7 @@ html.typography {
             @navbarBorderHeight: 4px;
             a {
                 border-bottom: @navbarBorderHeight solid @colorBase;
-                padding-bottom: @magicNumber - @navbarBorderHeight;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
 
             }
         }

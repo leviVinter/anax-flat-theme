@@ -34,7 +34,7 @@ h2 {
         @navbarBorderHeight: 4px;
         a {
             border-bottom: @navbarBorderHeight solid @colorBase;
-            padding-bottom: @magicNumber - @navbarBorderHeight;
+            padding-bottom: @magicNumber/2 - @navbarBorderHeight;
 
         }
     }
@@ -65,4 +65,10 @@ h2 {
 .next-previous a {
     color: @colorBase;
     text-decoration: none;
+}
+
+.outer-wrap-footer {
+    overflow-y: auto;
+    margin-top: @magicNumber * 1px;
+    background-color: #eee;
 }

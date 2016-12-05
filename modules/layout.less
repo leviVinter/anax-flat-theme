@@ -25,6 +25,15 @@ body {
             padding: 0 0.5em;
         }
     }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        a {
+            text-decoration: none;
+        }
+    }
 }
 
 
@@ -91,11 +100,8 @@ body {
 }
 
 .site-header {
-    height: 3 * @magicNumber;
+    height: 5 * @magicNumber;
     vertical-align: center;
-    .navbar2 {
-        float: right;
-    }
 
     .logo-1 {
         position: absolute;
@@ -174,6 +180,11 @@ body {
         padding-left: 0;
         a {
             text-decoration: none;
+        }
+        .selected {
+            a {
+                padding-left: 0.3em;
+            }
         }
     }
 
