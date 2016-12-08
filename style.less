@@ -111,9 +111,8 @@ html.color {
 
     .outer-wrap-footer {
         overflow-y: auto;
-        color: #fff;
         margin-top: @magicNumber * 1px;
-        background-color: #424242;
+        background-color: #eee;
     }
 }
 
@@ -395,5 +394,308 @@ html.typography {
 
     .alan-turing {
         font-family: "Gloria Hallelujah", cursive;
+    }
+}
+
+html.depth {
+
+    @colorBase: #2D5071;
+    @colorDarker1: #153655;
+    @colorDarker2: #05203A;
+    @colorLighter1: #4E6E8C;
+    @colorLighter2: #7791A9;
+    @shadowColor: #888888;
+    body {
+        background-color: #ffffff;
+        a {
+            color: #843B18;
+        }
+        img {
+            box-shadow: -3px 3px 5px @shadowColor,
+                        3px -3px 5px @shadowColor,
+                        -3px -3px 5px @shadowColor,
+                        3px 3px 5px @shadowColor;
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: @colorDarker2;
+    }
+
+    h1,
+    h2 {
+        text-shadow: -3px 0 5px @shadowColor;
+
+    }
+
+    h2 {
+        font-style: italic;
+    }
+
+    .navbar2 {
+        a {
+            color: #000;
+        }
+        a:hover {
+            color: @colorLighter1;
+        }
+        .selected,
+        .selected-parent {
+            @navbarBorderHeight: 4px;
+            a {
+                
+                padding-bottom: @magicNumber/2 * 1px;
+                
+
+            }
+            box-shadow: -3px 0 5px @shadowColor;
+        }
+    }
+
+    .site-logo-text a {
+        color: @colorDarker2;
+        line-height: @magicNumber * 3px;
+        text-shadow: -3px 0 5px @shadowColor;
+    }
+
+    .flash-wrap img {
+        box-shadow: none;
+    }
+
+    .breadcrumb-list a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .toc {
+        a {
+            color: @colorBase;
+        }
+        .selected {
+            background-color: @colorBase;
+            a {
+                color: #fff;
+            }
+            box-shadow: -3px 0 5px @shadowColor;
+        }
+    }
+
+    .next-previous a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .outer-wrap-footer {
+        overflow-y: auto;
+        margin-top: @magicNumber * 1px;
+        background-color: #eee;
+    }
+
+    .footer h4 {
+        text-shadow: -3px 0 5px @shadowColor;
+    }
+}
+
+html.repeat {
+
+    @colorBase: #2D5071;
+    @colorDarker1: #153655;
+    @colorDarker2: #05203A;
+    @colorLighter1: #4E6E8C;
+    @colorLighter2: #7791A9;
+    body {
+        background-color: #ffffff;
+        a {
+            color: #843B18;
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: @colorDarker2;
+    }
+
+    h2 {
+        font-style: italic;
+    }
+
+    .site-header,
+    .breadcrumb-list,
+    h1,
+    h2 {
+        background-image: url("../../htdocs/img/congruent_pentagon.png");
+    }
+
+    .navbar2 {
+        a {
+            color: #000;
+        }
+        a:hover {
+            color: @colorLighter1;
+        }
+        .selected,
+        .selected-parent {
+            @navbarBorderHeight: 4px;
+            a {
+                border-bottom: @navbarBorderHeight solid @colorBase;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
+
+            }
+        }
+    }
+
+    .site-logo-text a {
+        color: @colorDarker2;
+        line-height: @magicNumber * 3px;
+    }
+
+    .breadcrumb-list a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .toc {
+        a {
+            color: @colorBase;
+        }
+        .selected {
+            background-image: url("../../htdocs/img/congruent_pentagon.png");
+        }
+    }
+
+    .next-previous a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .inner-wrap-footer .row {
+        overflow-y: auto;
+        margin-top: @magicNumber * 1px;
+        background-image: url("../../htdocs/img/congruent_pentagon.png");
+    }
+}
+
+html.direction {
+
+    @color: #000;
+
+    .breadcrumb-list,
+    .main,
+    .sidebar,
+    .after-main,
+    .outer-wrap-footer {
+        opacity: 0;
+    }
+
+    .breadcrumb-list,
+    .sidebar {
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-fill-mode: forwards;
+    }
+
+    .main {
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    .outer-wrap-footer,
+    .after-main {
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-delay: 2s; /* Safari 4.0 - 8.0 */
+        animation-name: example;
+        animation-duration: 3s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes example {
+        0%   {opacity: 0}
+        100% {opacity: 1}
+    }
+
+    @colorBase: #2D5071;
+    @colorDarker1: #153655;
+    @colorDarker2: #05203A;
+    @colorLighter1: #4E6E8C;
+    @colorLighter2: #7791A9;
+    body {
+        background-color: #ffffff;
+        a {
+            color: #843B18;
+        }
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: @colorDarker2;
+    }
+
+    h2 {
+        font-style: italic;
+    }
+
+    .navbar2 {
+        a {
+            color: #000;
+        }
+        a:hover {
+            color: @colorLighter1;
+        }
+        .selected,
+        .selected-parent {
+            @navbarBorderHeight: 4px;
+            a {
+                border-bottom: @navbarBorderHeight solid @colorBase;
+                padding-bottom: @magicNumber/2 - @navbarBorderHeight;
+
+            }
+        }
+    }
+
+    .site-logo-text a {
+        color: @colorDarker2;
+        line-height: @magicNumber * 3px;
+    }
+
+    .breadcrumb-list a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .toc {
+        a {
+            color: @colorBase;
+        }
+        .selected {
+            background-color: @colorBase;
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .next-previous a {
+        color: @colorBase;
+        text-decoration: none;
+    }
+
+    .outer-wrap-footer {
+        overflow-y: auto;
+        margin-top: @magicNumber * 1px;
+        background-color: #eee;
     }
 }

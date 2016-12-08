@@ -1,5 +1,10 @@
 #Revisions
 
+v6.0.0 (2016-12-08)
+---------------------------------------
+
+* There are three new styles for the html classes depth, repeat and direction.
+
 v5.0.0 (2016-12-05)
 ---------------------------------------
 
