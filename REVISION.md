@@ -1,5 +1,10 @@
 #Revisions
 
+v6.0.1 (2016-12-08)
+---------------------------------------
+
+* There are three new styles for the html classes theme1, theme2, and theme3.
+
 v6.0.0 (2016-12-08)
 ---------------------------------------
 
